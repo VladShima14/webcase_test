@@ -13,18 +13,6 @@
 
             <h1><a href="{% url 'test_detail' pk=product.pk %}">{{ product.name }}</a></h1>
 
-
-            {% for prod in product.productdetail.all %}
-                <form>
-                    <div>
-                    <input type="radio" id="contactChoice1"
-                    name="contact" value="email">
-                    <label for="contactChoice1">{{ prod.color.name }}</label>
-                </div>
-                </form>
-            {% endfor %}
-
-
         {% endfor %}
 
     {% endblock %}

@@ -114,7 +114,7 @@
           body
         ),
         success: function(response) {
-          $("#message").text(+response.price ? response.price : 'Neudacha');
+          $("#message").text(+response.price ? response.price : 'Товар отсутствует');
         }
       });
     };
